@@ -1,0 +1,18 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10;
+    align-content: center;
+   }
+   
+   .example-container > * {
+    width: 50%;
+
+   }
+   
+
+   .button-row.bu  button,
+   .button-row a {
+    margin-right: 28px;
+    width: 20%;
+   }

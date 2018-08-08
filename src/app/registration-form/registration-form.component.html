@@ -1,0 +1,33 @@
+
+<div class="example-container">
+ <mat-form-field>
+   <input matInput placeholder="Username" [(ngModel)]="userModel.username">
+ </mat-form-field>
+
+ <mat-form-field>
+     <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" [(ngModel)]="userModel.password">
+     <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+ </mat-form-field>
+
+ <mat-form-field>
+   <textarea matInput placeholder="FullName" [(ngModel)]="userModel.fullName"></textarea>
+ </mat-form-field>
+
+ <mat-form-field>
+   <textarea matInput placeholder="Contact Number" [(ngModel)]="userModel.contactNo"></textarea>
+ </mat-form-field>
+
+ <mat-form-field>
+   <textarea matInput placeholder="Email id" [(ngModel)]="userModel.email"></textarea>
+ </mat-form-field>
+
+ <mat-form-field>
+   <textarea matInput placeholder="City" [(ngModel)]="userModel.city"></textarea>
+ </mat-form-field>
+
+ 
+
+</div>
+
+  <button  mat-flat-button color="primary" (click)="onSubmit()">Submit</button>
+
